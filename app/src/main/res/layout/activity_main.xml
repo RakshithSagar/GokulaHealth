@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8FDF8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Gokula-Health"
+            android:textColor="#1A5D1A"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EN"
+                android:textColor="#1A5D1A"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="#CCCCCC"
+                android:paddingHorizontal="2dp" />
+
+            <TextView
+                android:id="@+id/btnKannada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ಕನ್ನಡ"
+                android:textColor="#1A5D1A"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCattleProfile"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/btn_add_cattle"
+            app:icon="@drawable/ic_cow"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            android:backgroundTint="#1A5D1A"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnMilkDiary"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/btn_milk_diary"
+            app:icon="@drawable/ic_milk"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            android:backgroundTint="#2C3E50"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnVaccination"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/btn_vaccination"
+            app:icon="@drawable/ic_syringe"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCattleGallery"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/btn_history"
+            app:icon="@drawable/ic_cow"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            android:backgroundTint="#4CAF50" />
+
+    </LinearLayout>
+
+</LinearLayout>

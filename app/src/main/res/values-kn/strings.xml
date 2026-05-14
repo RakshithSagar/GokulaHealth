@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಗೋಕುಲ ಹೆಲ್ತ್</string>
+
+    <string name="back_nav">ಹಿಂದಕ್ಕೆ</string>
+    <string name="back_to_dashboard">ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ</string>
+    <string name="btn_add_cattle">ಜಾನುವಾರು ಪ್ರೊಫೈಲ್</string>
+    <string name="btn_milk_diary">ಹಾಲು ದಿನಚರಿ</string>
+    <string name="btn_vaccination">ಲಸಿಕೆ ವೇಳಾಪಟ್ಟಿ</string>
+    <string name="btn_history">ಜಾನುವಾರು ಗ್ಯಾಲರಿ</string>
+
+    <string name="milk_diary">ದಿನಚರಿ ಹಾಲು ಡೈರಿ</string>
+    <string name="morning_yield">ಬೆಳಗಿನ ಇಳುವರಿ (ಲೀಟರ್‌ಗಳು)</string>
+    <string name="evening_yield">ಸಂಜೆಯ ಇಳುವರಿ (ಲೀಟರ್‌ಗಳು)</string>
+    <string name="milk_rate">ಹಾಲಿನ ದರ (ಲೀಟರ್‌ಗೆ ಬೆಲೆ)</string>
+    <string name="daily_expenses">ದೈನಂದಿನ ವೆಚ್ಚಗಳು (ಮೇವು/ಔಷಧಿ)</string>
+    <string name="btn_save">ದಿನದ ಉತ್ಪಾದನೆಯನ್ನು ಉಳಿಸಿ</string>
+    <string name="btn_download_report">ಮಾಸಿಕ ವರದಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ (PDF)</string>
+    <string name="monthly_avg_label">ತಿಂಗಳ ಸರಾಸರಿ: ಲೆಕ್ಕಹಾಕಲಾಗುತ್ತಿದೆ…</string>
+    <string name="trends_label">30-ದಿನಗಳ ಉತ್ಪಾದನಾ ಪ್ರವೃತ್ತಿಗಳು</string>
+    <string name="monthly_avg">ತಿಂಗಳ ಸರಾಸರಿ: %1$.2f ಲೀ</string>
+    <string name="profit_msg">ಒಟ್ಟು ಆದಾಯ: ₹%1$.2f\nವೆಚ್ಚಗಳು: ₹%2$.2f\nನಿವ್ವಳ ಲಾಭ: ₹%3$.2f</string>
+
+    <string name="title_registration">ಜಾನುವಾರು ನೋಂದಣಿ</string>
+    <string name="cattle_registration">ಜಾನುವಾರು ನೋಂದಣಿ</string>
+    <string name="ear_tag_id">ಕಿವಿ ಟ್ಯಾಗ್ ಐಡಿ (ಅಗತ್ಯವಿದೆ)</string>
+    <string name="ear_tag_hint">ಉದಾ: IND12345</string>
+    <string name="cow_name">ಹಸುವಿನ ಹೆಸರು</string>
+    <string name="cow_name_hint">ಉದಾ: ಗೌರಿ</string>
+    <string name="breed">ತಳಿ</string>
+    <string name="breed_hint">ಉದಾ: ಹೋಲ್‌ಸ್ಟೈನ್ ಫ್ರಿಸಿಯನ್</string>
+    <string name="dob">ಹುಟ್ಟಿದ ದಿನಾಂಕ</string>
+    <string name="dob_hint">ವರ್ಷ-ತಿಂಗಳು-ದಿನ</string>
+    <string name="cattle_photo">ಜಾನುವಾರು ಭಾವಚಿತ್ರ</string>
+    <string name="cow_photo_preview">ಹಸುವಿನ ಚಿತ್ರ</string>
+    <string name="btn_capture">ಫೋಟೋ ತೆಗೆಯಿರಿ</string>
+    <string name="btn_save_profile">ಡಿಜಿಟಲ್ ಪ್ರೊಫೈಲ್ ಉಳಿಸಿ</string>
+    <string name="toast_cattle_added">ಜಾನುವಾರು ಪ್ರೊಫೈಲ್ ಉಳಿಸಲಾಗಿದೆ!</string>
+    <string name="toast_fill_details">ದಯವಿಟ್ಟು ಟ್ಯಾಗ್ ಐಡಿ ಮತ್ತು ಹೆಸರನ್ನು ಭರ್ತಿ ಮಾಡಿ</string>
+
+    <string name="schedule_vaccination">ಲಸಿಕೆ ವೇಳಾಪಟ್ಟಿ</string>
+    <string name="select_cattle">ಜಾನುವಾರು ಆಯ್ಕೆಮಾಡಿ</string>
+
+    <string name="vaccine_name_label">ಲಸಿಕೆ ಹೆಸರು</string>
+    <string name="vaccine_name_hint">ಲಸಿಕೆ ಹೆಸರನ್ನು ನಮೂದಿಸಿ (ಉದಾ: FMD)</string>
+
+    <string name="due_date">ನಿಗದಿತ ದಿನಾಂಕ</string>
+    <string name="select_time">ಸಮಯ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="btn_set_reminder">ರಿಮೈಂಡರ್ ಹೊಂದಿಸಿ</string>
+
+    <string name="registered_cattle">ನೋಂದಾಯಿತ ಜಾನುವಾರುಗಳು</string>
+    <string name="btn_health_record">ಆರೋಗ್ಯ ದಾಖಲೆ</string>
+    <string name="due_date_format">ದಿನಾಂಕ: %1$s</string>
+
+    <string name="tag_id_format">ಟ್ಯಾಗ್ ಐಡಿ: %1$s</string>
+    <string name="breed_format">ತಳಿ: %1$s</string>
+    <string name="born_format">ಜನನ: %1$s</string>
+
+    <string name="health_records_title">%1$s ಅವರ ಆರೋಗ್ಯ ದಾಖಲೆಗಳು</string>
+    <string name="due_label">ದಿನಾಂಕ: </string>
+</resources>

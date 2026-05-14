@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBackArrow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/milk_diary"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#1E88E5"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvMonthlyAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Average: Calculating..."
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30-Day Productivity Trends"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="8dp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/milkChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Today's Yield"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morning_yield"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_yield"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etEvening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/milk_rate"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/etPricePerLiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 40"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_expenses"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/etDailyExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#E3F2FD">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="12dp">
+
+                <TextView android:text="Morning:" android:textStyle="bold" />
+                <TextView android:id="@+id/tvSummaryMorning" android:layout_gravity="end" android:text="0.0 L" />
+
+                <TextView android:text="Evening:" android:textStyle="bold" />
+                <TextView android:id="@+id/tvSummaryEvening" android:layout_gravity="end" android:text="0.0 L" />
+
+                <TextView android:text="Total Yield:" android:textStyle="bold" />
+                <TextView android:id="@+id/tvSummaryTotal" android:layout_gravity="end" android:text="0.0 L" android:textColor="#1E88E5" android:textStyle="bold" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#90CAF9" android:layout_columnSpan="2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" />
+
+                <TextView android:text="Gross Profit:" android:textStyle="bold" />
+                <TextView android:id="@+id/tvSummaryGross" android:layout_gravity="end" android:text="₹0.00" />
+
+                <TextView android:text="NET PROFIT:" android:textStyle="bold" android:textColor="#2E7D32" />
+                <TextView android:id="@+id/tvSummaryNet" android:layout_gravity="end" android:text="₹0.00" android:textStyle="bold" android:textColor="#2E7D32" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSaveMilk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/btn_save"
+            android:backgroundTint="#1E88E5"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnDownloadReport"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/btn_download_report"
+            android:backgroundTint="#2E7D32"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

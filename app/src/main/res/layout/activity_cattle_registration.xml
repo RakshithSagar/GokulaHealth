@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FDF8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btnBackToDashboard"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="#1A5D1A"
+                android:contentDescription="@string/back_to_dashboard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cattle_registration"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#1A5D1A"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ear_tag_id"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+        <EditText
+            android:id="@+id/etEarTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ear_tag_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cow_name"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cow_name_hint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breed"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+        <EditText
+            android:id="@+id/etBreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/breed_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dob"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+        <EditText
+            android:id="@+id/etDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dob_hint"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cattle_photo"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/ivCattlePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="fitCenter"
+            android:background="#E0E0E0"
+            android:contentDescription="@string/cow_photo_preview" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCapturePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="@string/btn_capture"
+            app:icon="@drawable/ic_syringe"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="#FFFFFF"
+            android:backgroundTint="#795548"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveCattle"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="@string/btn_save_profile"
+            app:icon="@drawable/ic_cow"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="#FFFFFF"
+            android:backgroundTint="#1A5D1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

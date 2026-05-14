@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">GokulaHealth</string>
+
+    <string name="back_nav">Back</string>
+    <string name="back_to_dashboard">Back to Dashboard</string>
+    <string name="btn_add_cattle">Cattle Profile</string>
+    <string name="btn_milk_diary">Milk Diary</string>
+    <string name="btn_vaccination">Schedule Vaccination</string>
+    <string name="btn_history">View Cattle Gallery</string>
+
+    <string name="milk_diary">Daily Milk Diary</string>
+    <string name="morning_yield">Morning Yield (Liters)</string>
+    <string name="evening_yield">Evening Yield (Liters)</string>
+    <string name="milk_rate">Milk Rate (Price per Liter)</string>
+    <string name="daily_expenses">Daily Expenses (Feed/Meds)</string>
+    <string name="btn_save">Log Daily Production</string>
+    <string name="btn_download_report">Download Monthly Report (PDF)</string>
+    <string name="monthly_avg_label">Monthly Average: Calculating…</string>
+    <string name="trends_label">30-Day Productivity Trends</string>
+    <string name="monthly_avg">Monthly Average: %1$.2f L</string>
+    <string name="profit_msg">Gross Revenue: %1$.2f\nExpenses: %2$.2f\nNET PROFIT: %3$.2f</string>
+
+    <string name="title_registration">Register New Cattle</string>
+    <string name="cattle_registration">Cattle Registration</string>
+    <string name="ear_tag_id">Ear Tag ID (Required)</string>
+    <string name="ear_tag_hint">e.g. IND12345</string>
+    <string name="cow_name">Cow Name</string>
+    <string name="cow_name_hint">e.g. Gowri</string>
+    <string name="breed">Breed</string>
+    <string name="breed_hint">e.g. Holstein Friesian</string>
+    <string name="dob">Date of Birth</string>
+    <string name="dob_hint">YYYY-MM-DD</string>
+    <string name="cattle_photo">Cattle Photo</string>
+    <string name="cow_photo_preview">Cow Photo Preview</string>
+    <string name="btn_capture">Capture Photo</string>
+    <string name="btn_save_profile">Save Digital Profile</string>
+    <string name="toast_cattle_added">Cattle Profile Saved Successfully!</string>
+    <string name="toast_fill_details">Please fill in Tag ID and Name</string>
+
+    <string name="schedule_vaccination">Schedule Vaccination</string>
+    <string name="select_cattle">Select Cattle (Required)</string>
+
+    <string name="vaccine_name_label">Vaccine Name</string>
+    <string name="vaccine_name_hint">Vaccine Name (e.g., FMD)</string>
+
+    <string name="due_date">Due Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="btn_set_reminder">Set Offline Reminder</string>
+
+    <string name="registered_cattle">Registered Cattle</string>
+    <string name="btn_health_record">Health Record</string>
+    <string name="due_date_format">Due: %1$s</string>
+
+    <string name="tag_id_format">Tag ID: %1$s</string>
+    <string name="breed_format">Breed: %1$s</string>
+    <string name="born_format">Born: %1$s</string>
+
+    <string name="health_records_title">%1$s\'s Health Records</string>
+    <string name="due_label">Due: </string>
+</resources>
